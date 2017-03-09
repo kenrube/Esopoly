@@ -1,0 +1,142 @@
+crazyTable = ( {
+    {1, 0, 0},
+    {1, 0, 2},
+    {2, 2, 1}
+   } );
+crazyTrits[a_Integer, b_Integer] := crazyTable[[a + 1, b + 1]];
+crazy[x_Integer, y_Integer] := FromDigits[
+   MapThread[
+    crazyTrits,
+    {IntegerDigits[x, 3, 10], IntegerDigits[y, 3, 10]}
+    ], 3
+   ];
+bound[u_Integer] := u - 94 (Quotient[u - 33, 94]) ;(* lead number to a range {33..126} *)
+
+opNormTable = ToCharacterCode["ji*p</vo"];
+unNopLen[lst_] := Count[lst, 40] + Count[lst, 63];(* count of ROTR and CRAZY ops in source code *)
+(* {o,*,p} ~ {0,1,2} ~ {69,40,63} *)
+
+rotr[x_] := (
+   FromDigits[
+    RotateRight[
+     IntegerDigits[x, 3, 10]
+     ], 3
+    ]
+   );
+exec[pt1_, b1_, a01_] := Module[
+   {i, res = a01},
+   (
+    For[
+     i = 1, i <= Length[pt1], i++,
+     Switch[
+       pt1[[i]],
+       40, res = rotr[b1[[i]]],
+       63, res = crazy[b1[[i]], res]
+       ];
+     ];
+    Return[res]
+    )
+   ];(* run command sequence [pt1] with data sequence [b1] *)
+generateData1[d_Integer, a0_Integer, a_Integer, pt_] := 
+  Module[
+   {i = 0, res = a0, t, c, b, pl = unNopLen[pt], pr, k, j, l, 
+    opTable = {41, 99, 40, 63, 100, 118, 82, 69}, res0, res1},
+   (
+    While[
+     i < 8^pl && res != a,
+     t = IntegerDigits[i, 8, pl] + 1;
+     c = opTable[[t]];
+     pr = ConstantArray[69, Length[pt]];
+     For[k = 1; j = 1, k <= Length[pr], k++,
+      If[
+       pt[[k]] != 69,
+       pr[[k]] = c[[j]];
+       j++
+       ]
+      ];
+     (* [pr] - current symbol's data segment *)
+     
+     b = ConstantArray[0, Length[pr]];
+     Do[
+      b[[l]] = bound[pr[[l]] - (d + l)],
+      {l, Length[pr]}
+      ];
+     (*b - data segment codes*)
+     res0 = exec[pt, b, a0];
+     res = Mod[res0, 256];
+     i++
+     ];
+    Return[{res == a, pr, res0}];
+    )
+   ];
+F[list_] := Count[list, 40] >= 2 (* count of CRAZY command *)||
+   (Length[Position[list, 40]] > 0 
+   && Length[Position[list, 63]] > 0 
+   && Last[Position[list, 40]][[1]] > First[Position[list, 63]][[1]]); (* CRAZY is after ROTR *)
+Fp[list_] := Count[list, 63] != Length[list];
+find[d_, a0_, a_] := Module[
+   {i, p, len = 1, s = {False}, pt, op2Table = {69, 40, 63}},
+   (
+    While[
+      True,
+      For[
+       i = 0,
+       i < 3^len,
+       i++,
+       p = IntegerDigits[i, 3, len];
+       pt = op2Table[[p + 1]];
+       If[
+        ! F[pt],
+        s = generateData1[d, a0, a, pt];
+        If[
+         s[[1]],
+         Return[{pt, s[[2]], s[[3]]}];
+         ]
+        ]
+       ];
+      len++;
+      ];
+    )
+   ];
+xLat1 = "+b(29e*j1VMEKLyC})8&m#~W>qxdRp0wkrUo[D7,XTcA\"lI.v%{gJh4G\-=O@5`_3i<?Z';FNQuY]szf$!BS/|t:Pn6^Ha";
+getSource[s_String] := 
+  Module[{cc = 93, d = 7, aa = 0, i, k, result, res1, res2, res3, f, 
+    sc, xLat1C = Characters[xLat1]},
+   (
+    f = ToCharacterCode[s];
+    sc = ConstantArray[ToCharacterCode["o"], 200];
+    sc[[d]] = ToCharacterCode["i"];
+    cc++;
+    d++;
+    Do[
+     (
+      If[
+       f[[k]] == f[[k - 1]],
+       sc[[cc]] = ToCharacterCode["<"];
+       cc++;
+       d++;
+       Continue[]
+       ];
+      result = find[d - 1, aa, f[[k]]];
+      res1 = result[[1]];
+      res2 = result[[2]];
+      res3 = result[[3]];
+      For[
+       i = 1,
+       i <= Length[res1],
+       i++,
+       sc[[cc + i - 1]] = ToCharacterCode[xLat1C[[res1[[i]] - 33]]];
+       sc[[d + i - 1]] = ToCharacterCode[xLat1C[[res2[[i]] - 33]]];
+       ];
+      sc[[cc + Length[res1]]] = ToCharacterCode["<"];
+      cc += (Length[res1] + 1);
+      d += (Length[res1] + 1);
+      aa = res3;
+      ),
+     {k, Length[f]}
+     ];
+    sc[[cc]] = ToCharacterCode["v"];
+    Return[StringJoin[FromCharacterCode[sc]]]
+    )
+   ];
+getSource["Malbolge program"]
