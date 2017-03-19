@@ -5,7 +5,7 @@ Release date: 2013 May
 
 See [this link](https://github.com/kenrube/Esopoly/blob/master/source?ts=1) for appropriate source view or see below how it should look:
 
-![view](https://github.com/kenrube/Esopoly/blob/master/view.png "Esoteric polyglot in Sublime")
+![view](https://github.com/kenrube/Esopoly/blob/master/view.jpg "Esoteric polyglot in Sublime")
 
 # License
 
