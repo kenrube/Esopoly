@@ -1,17 +1,17 @@
 # Esopoly
-Polyglot written in 7 esoteric programming languages: [Malbolge](http://esolangs.org/wiki/Malbolge), [Brainfuck](http://esolangs.org/wiki/Brainfuck), [Whitespace](http://esolangs.org/wiki/Whitespace), [Spoon](http://esolangs.org/wiki/Spoon), [Asdf](http://esolangs.org/wiki/Asdf), [123](http://esolangs.org/wiki/123) and [EXCON](http://esolangs.org/wiki/EXCON). It pretends to be a program in the language whose interpreter is working now :)
+Polyglot written in 7 esoteric programming languages: [Malbolge](http://esolangs.org/wiki/Malbolge), [Brainfuck](http://esolangs.org/wiki/Brainfuck), [Whitespace](http://esolangs.org/wiki/Whitespace), [Spoon](http://esolangs.org/wiki/Spoon), [asdf](http://esolangs.org/wiki/Asdf), [123](http://esolangs.org/wiki/123) and [EXCON](http://esolangs.org/wiki/EXCON). It pretends to be a program in the language whose interpreter is working now :)
 
-Release date: 2013 May
+If you want to know how it was impemented please read wiki: [en](https://github.com/kenrube/Esopoly/wiki/Process-of-creation), [ru](https://github.com/kenrube/Esopoly/wiki/Процесс-создания). [This link](https://github.com/kenrube/Esopoly/blob/master/source?ts=1) shows appropriate source view. How it should look in fact:
 
-See [this link](https://github.com/kenrube/Esopoly/blob/master/source?ts=1) for appropriate source view or see below how it should look:
+![view](https://github.com/kenrube/Esopoly/blob/master/view.jpg "Esoteric polyglot")
 
-![view](https://github.com/kenrube/Esopoly/blob/master/view.jpg "Esoteric polyglot in Sublime")
 
 # License
+All sources licensed under MIT except [asdf](https://github.com/kenrube/Esopoly/blob/master/sources/asdf/interpreter.exe), [123](https://github.com/kenrube/Esopoly/blob/master/sources/123/interpreter.exe) and [EXCON](https://github.com/kenrube/Esopoly/blob/master/sources/EXCON/interpreter.rb) interpreters.
 
     MIT License
 
-    Copyright (c) 2013 Ivan Zolotarev (@kenrube)
+    Copyright (c) May 2013 Ivan Zolotarev (@kenrube)
 
     Permission is hereby granted, free of charge, to any person obtaining a copy
     of this software and associated documentation files (the "Software"), to deal
