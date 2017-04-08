@@ -1,0 +1,284 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.4' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     12937,        274]
+NotebookOptionsPosition[     12700,        261]
+NotebookOutlinePosition[     13036,        276]
+CellTagsIndexPosition[     12993,        273]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{"a", "=", 
+  RowBox[{
+   RowBox[{"RealDigits", "[", 
+    RowBox[{"Pi", ",", "8", ",", "10000"}], "]"}], "+", "1"}]}], "\n", 
+ RowBox[{"b", "=", 
+  RowBox[{
+  "Characters", "[", 
+   "\"\<DCBA@?\\\\nZ;|38x0SA3tsN`Lo98*G\\\"'&%$#Sc>`v<zLxwI5tWrDpoAm?Oj)\
+Laf8dc\\\\aZ~X|?U=Y;v9ONS54JnHG/jJCBGF(>b%;_\\\"876Z{321U5.-Qr*N('K%$H(hEf${\
+Abaw=^zs9Zp6Wm3kj0Qglk+vo:sooooa3o1oo>>o+dosaooooo11ooDo++\
+oooasAooooooooo1ooAos+aoooo+oooooo1ASooo+^os[ooooso11oAoooo<oosooooaoo1Aoooo+\
+oooaooooo100ooo++oooasoooooooooo10SS32+0oooo+ooooo2o0Aooo+oosooooo3o10oAoo++\
+ooaoooooaoo1Aoooo+oooaooooo11oooo++oo>aaAooooooooo1oSS-s1aooo]ooooooo1oSoaa<^\
+osoooooso11S.oo>+ooasooooaoo10oooo+oooaSoooo11oooo++SooosAooooooo32o0SAo2+\
+0oooo+[oooo2o0Aoaa<ooooooooo2200Aoo++ooasooooooo1ooooS+oosaSoooo10oooo++\
+oooaaAoooooooo210oAos+ooooo+oooooo1oSooo+oosoooooo2100Aoo>oooosooooaoo10oo-\
+oooooaooo]2100ooooAoooa<oooooooo3o1oS.os>ooooo+oooo3o1oSoao+oosooooooo11oAoo++\
+ooasoooo[o21oooo<ooossoooo3110o--oAoooosAoooooooooo0oA-o10oo-ooooooooo0Ao>\
+aooosooooosoo0SA-oooooosoo]oa3o10ooo<ooooaoo^o211oo-ooAoooasooo!ooo:o21oS.os+\
+aoooo+oooooo1oSoaa+oosoooooso110ooo++ooosooooooo1AoooS+oooaooooo100ooo++\
+oooaaAoooooooooo0o.oo+0oooo+ooooooo0Aoao+oosoooooso110ooo++ooosooooaoo10o.-\
+Sooooaoooooo00o--oAoooaaooooooooooo0SS-so0oo-ooooooooo0Ao-oooosooooooo10oA--\
+ooooaoooooaoo10o.>o+oooaSooooo00ooo++SooosAooo[<ooooo0SAoo+0oooo+ooooooo0Aoaa+\
+oosoooooso10SAoo++ooosooooaoo10o>-oooooaooo]o200ooooAoooa<Aooooooo3o10o.oo>\
+aoooo+oooooo10Sooo+oosooooos3200Aoo++ooosoooo[o2o0ooo<ooooaoo^o2200o--\
+oAoooosoooooooo3o10SS-o10oo-oooooo32o0Ao>oooosooooo3o100A-oooooaooo]oaoo10ooo<\
+ooooaoo^oo11oo--oAoooaaAooooooooo1oo.32+aoooo+ooooo21oAoaa+oosoooooso11SAoo++\
+ooosooooao21Aoooo+oooaooo3o100ooo++oooaaAooooooo3o10S.os>0oooooooooooo0So>a+\
+oosoooooo211oAoo++ooaoooooao21Aoooo+oooaooooo11oooo++oooaaAoooooooo210oAo2+\
+aoooo+[oooo210Sooo<oosooooos2o00Aoo++ooosooooaooo0oooo+oooaoooooo00ooo+Aoo>\
+aaAooooooooo1oSS-s10ooo]ooooo3o1oAooo<^osoooooo!100.ooooooaooooo[oo10oo-oo:\
+ooaoo^]o100ooooAoooa<oooooooo32o0SSos+aoooo+oooooo10Sooa+ooooooooo2200Aoo++\
+ooosoooooooo0o.oS+oosaSooooo00ooo+AoooaaAoooooooooo0S.-s1ooo-ooooooo210So-\
+aooosoooooo211o.--ooooaoooooao21Aoo-oooooaSoooo100o--oooooosooooooooo210SA-\
+s10oo-ooooooo21oAo-aooosoooooso100.oo++ooosooooaoo10oooS+oooaooo3o100ooo++\
+oooaaAooooooo32o0oAo2+0oooo+ooooo2o0Aoaa+oosooooos2200ooo++ooosooooao2o0oooS+\
+oooaoooo2200.oooAoo>osooooooooooo0SSoo+0oooo+oooooo10Aooo+oosooooooo100Aoo+\
+oooaooooo[oo^0ooo<ooooaoooooo00o--oAoooosooooooooooo0SS-oo0oo-ooooooooo0Ao>\
+oooosoooooooo00A-oooooaooo]oaooo0ooo<ooooaSooooo00o-ooooooosooooooooooo0S.oo+\
+0oooo+ooooooo0Aooo+oosoooooooo00Aoo++<oaoooooaooo0o>oo+oooaoooooo00ooo++\
+oooaaooooooooooo0SSos+0oooo+ooooooo0Aooo+oosoooooooo00Aoo+oooasoooooooo0o.oS<\
+ooooSooo210oooooAoo>osAoooo<oooo10oAo21aoo^ooooo!oo1oAoaaoo:sooooos211SAoo>\
+ooooso^ooao21Aooo<ooooaoo^oo11oooooAoo>osooo>o<ooo21oSSo21aoo^ooooooo21oSoaa<^\
+osooooos3100ooo>o<oosooooaoo10o>oS<oooaooooo100ooooAoo>aaooo>o<oooo10SSos1aoo^\
+ooooo!oo1oSoaaoo:oooooooo110Aoo>o<oaso^oooooo0oo>S<ooooSo^oo100ooooAoooosAoo>\
+o<ooooo0oA321aoo^ooooooo210Aoaao<oooooooo2200Aoo>o<oasoooooooo0o>>S<ooooSo^oo!\
+00ooooAoooosA:o>o<ooooo0oAoso0oooooooooooo0So>><<osoooooooo00Aoo>o<\
+oosooooaooo0oo><ooooaSo^oo!0ooooooooooso:o>o<oooo10SAos>0<ooooooooo2o0Aoaa<<^\
+ooooooooo00Aoo>oooosoooooooo0o>oS<ooooSo^oo110ooooAoo>osAoo>o<ooo21ooAos10oo^\
+ooooo!o2o0Sooooo:soooooo2o00Aoo>o<ooso^ooaooo0o>><<oooaooooo10oooooAoooasooo>\
+o<ooo210SS3o1aoo^oooooooo1oSoaa<^osoooooso11SAoo>o<ooso^ooaoo1ooo>\
+oooooaooooo11oooooooooooooo!ooo:oo1ooooo1ooo^oooooooo1oooo><o^oooooooo110ooo>\
+o<oooooooo32^0oo><ooooooo^o210oooooooo>o<ooo>o<ooo210ooooo0oo^ooooooooo0ooo><^\
+oooooooo210oooooooooooooo!oo1oooooo:ooooo^o211oooooooo>o<oo^>o<ooo21ooooo1ooo^\
+ooooooo2oooo>><<oooooooo22ooooo>o<oooo^oooo2oooooo<oooooo^o22ooooooooo>ooooo!\
+ooo:o2ooooo21oooooooooooo1oooo><^ooooooooo1ooooo>o<ooooooooo21oo>><<oooooo^\
+oo1ooooooooo>o<o^o>o<ooo21ooooo1ooo^ooooo!oo1ooooooo:ooooooo211ooooooooooo^\
+oooo21oo>><<ooooooooo1ooooooooo>o<ooo>o<ooo21ooooo1o<ooooooooo2oooo>oo^\
+oooooooo22ooooo>o<oooo^oo!o2ooooooo:ooooo^o22ooooooooo>o<ooo>o<ooo2ooooo21ooo^\
+ooooooo21oooo><^ooooooooo1ooooo>o<ooooooooo21ooo><ooooooo^oo1ooooooooo>o<o^o!\
+ooooo21ooooo1ooooooooooo21oooooooooooooooo11oooooooooooooooo21ooooooooooooooo1\
+1oooooooooooooooooooo21ooooo1ooooooooooo2oooooooooooooooo22ooooooooooooooooo2o\
+oooooooooooooo22ooooooooooooooooooooo2ooooo21ooooooooooo21oooooooooooooooo11oo\
+oooooooooooooo21ooooooooooooooo1ooooooooooooooooooooo21ooooo1ooooooooooo21oooo\
+oooooooooooo1ooooooooooooooooo21ooooooooooooooo1ooooooooooooooooooooo21ooooo1o\
+oooooooooo21oooooooooooooooo1ooooooooooooooooo2ooooooooooooooo22oooooooooooooo\
+ooooooo2ooooo2oooooooooooo2oooooooooooooooo221ooooooooooooooooo1oooooooooooooo\
+211ooooooooooooooooooooo1ooooo1oooooooooooo1ooooooooooooooo211oooooooooooooooo\
+21ooooooooooooooo1ooooooooooooooooooooo21ooooo1ooooooooooo2oooooooooooooooo22o\
+oooooooooooooooo2ooooooooooooooo22ooooooooooooooooooooo2ooooo21ooooooooooo21oo\
+oooooooooooooo1ooooooooooooooooo21ooooooooooooooo1ooooooooooooooooooooo21ooooo\
+1oooooooooooo1ooooooooooooooo211oooooooooooooooo21ooooooooooooooo1oooooooooooo\
+ooooooooo21ooooo1ooooooooooo21oooooooooooooooo1ooooooooooooooooo2ooooooooooooo\
+oo22ooooooooooooooooooooo2ooooo2oooooooooooo2oooooooooooooooo221oooooooooooooo\
+ooo1oooooooooooooo211ooooooooooooooooooooo1oooo21oooooooooooo1oooooooooooooooo\
+1ooooooooooooooooo21ooooooooooooooo1ooooooooooooooooooooo21ooooo1ooooooooooo21\
+oooooooooooooooo1ooooooooooooooooo2ooooooooooooooo22ooooooooooooooooooooo2oooo\
+o2oooooooooooo2oooooooooooooooo221ooooooooooooooooo1ooooooooooooooo1oooooooooo\
+ooooooooooo21ooooo1ooooooooooo21oooooooooooooooo11oooooooooooooooo21oooooooooo\
+ooooo1ooooooooooooooooooooo21ooooo1ooooooooooo21oooooooooooooooo1ooooooooooooo\
+oooo2ooooooooooooooo22ooooooooooooooooooooo2ooooo2oooooooooooo2ooooooooooooooo\
+o221oooooooooooooooo21ooooooooooooooo1ooooooooooooooooooooo21ooooo1ooooooooooo\
+o1oooooooooooooooo1ooooooooooooooooo21ooooooooooooooo1ooooooooooooooooooooo21o\
+oooo1ooooooooooo21oooooooooooooooo1ooooooooooooooooo21ooooooooooooooo1oooooooo\
+ooooooooooooo21ooo3ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo\
+oooooooooooooooooooooooooooooooooooo\>\"", "]"}]}], "\n", 
+ RowBox[{"c", "=", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{
+    "Characters", "[", 
+     "\"\<('&%$#\\\"!~}|{zyxwvutsrqponmlkjihgfedcba`_^]\\\\[\
+ZYXWVUTSRQPONMLKJIHGFEDCBA@?>=<;:9876543210/.-,+*)\>\"", "]"}], ",", 
+    RowBox[{
+    "Characters", "[", 
+     "\"\<ba`_^]\\\\[ZYXWVUTSRQPONMLKJIHGFEDCBA@?>=<;:9876543210/.-,+*)('&%$#\
+\\\"!~}|{zyxwvutsrqponmlkjihgfedc\>\"", "]"}], ",", 
+    RowBox[{
+    "Characters", "[", 
+     "\"\<'&%$#\\\"!~}|{zyxwvutsrqponmlkjihgfedcba`_^]\\\\[\
+ZYXWVUTSRQPONMLKJIHGFEDCBA@?>=<;:9876543210/.-,+*)(\>\"", "]"}], ",", 
+    RowBox[{
+    "Characters", "[", 
+     "\"\<>=<;:9876543210/.-,+*)('&%$#\\\"!~}|{zyxwvutsrqponmlkjihgfedcba`_^]\
+\\\\[ZYXWVUTSRQPONMLKJIHGFEDCBA@?\>\"", "]"}], ",", 
+    RowBox[{
+    "Characters", "[", 
+     "\"\<cba`_^]\\\\[ZYXWVUTSRQPONMLKJIHGFEDCBA@?>=<;:9876543210/.-,+*)('&%$#\
+\\\"!~}|{zyxwvutsrqponmlkjihgfed\>\"", "]"}], ",", 
+    RowBox[{
+    "Characters", "[", 
+     "\"\<utsrqponmlkjihgfedcba`_^]\\\\[ZYXWVUTSRQPONMLKJIHGFEDCBA@?>=<;:\
+9876543210/.-,+*)('&%$#\\\"!~}|{zyxwv\>\"", "]"}], ",", 
+    RowBox[{
+    "Characters", "[", 
+     "\"\<QPONMLKJIHGFEDCBA@?>=<;:9876543210/.-,+*)('&%$#\\\"!~}|{\
+zyxwvutsrqponmlkjihgfedcba`_^]\\\\[ZYXWVUTSR\>\"", "]"}], ",", 
+    RowBox[{
+    "Characters", "[", 
+     "\"\<DCBA@?>=<;:9876543210/.-,+*)('&%$#\\\"!~}|{\
+zyxwvutsrqponmlkjihgfedcba`_^]\\\\[ZYXWVUTSRQPONMLKJIHGFE\>\"", "]"}]}], 
+   "}"}]}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"boundO", "[", "u_Integer", "]"}], ":=", 
+   RowBox[{"u", "-", 
+    RowBox[{"94", " ", 
+     RowBox[{"(", 
+      RowBox[{"Quotient", "[", 
+       RowBox[{
+        RowBox[{"u", "-", "1"}], ",", "94"}], "]"}], ")"}]}]}]}], ";", 
+  RowBox[{"j", "=", "1"}], ";", 
+  RowBox[{"F", "=", 
+   RowBox[{"ConstantArray", "[", 
+    RowBox[{"0", ",", 
+     RowBox[{"Length", "[", "b", "]"}]}], "]"}]}], ";", 
+  RowBox[{"For", "[", 
+   RowBox[{
+    RowBox[{"i", "=", "1"}], ",", 
+    RowBox[{"i", "<", "153"}], ",", 
+    RowBox[{"i", "++"}], ",", 
+    RowBox[{
+     RowBox[{"F", "[", 
+      RowBox[{"[", "i", "]"}], "]"}], "=", 
+     RowBox[{"b", "[", 
+      RowBox[{"[", "i", "]"}], "]"}]}]}], "]"}], ";", 
+  RowBox[{"For", "[", 
+   RowBox[{
+    RowBox[{"k", "=", "153"}], ",", 
+    RowBox[{"k", "<", 
+     RowBox[{
+      RowBox[{"Length", "[", "b", "]"}], "+", "1"}]}], ",", 
+    RowBox[{"k", "++"}], ",", 
+    RowBox[{"If", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"b", "[", 
+        RowBox[{"[", "k", "]"}], "]"}], "\[Equal]", "\"\<o\>\""}], ",", 
+      RowBox[{
+       RowBox[{"t", "=", 
+        RowBox[{"c", "[", 
+         RowBox[{"[", 
+          RowBox[{
+           RowBox[{"a", "[", 
+            RowBox[{"[", 
+             RowBox[{"1", ",", "j"}], "]"}], "]"}], ",", 
+           RowBox[{"boundO", "[", "k", "]"}]}], "]"}], "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"While", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"t", "\[Equal]", "\"\<[\>\""}], ")"}], "||", 
+          RowBox[{"(", 
+           RowBox[{"t", "\[Equal]", "\"\<]\>\""}], ")"}], "||", 
+          RowBox[{"(", 
+           RowBox[{"t", "\[Equal]", "\"\<<\>\""}], ")"}], "||", 
+          RowBox[{"(", 
+           RowBox[{"t", "\[Equal]", "\"\<>\>\""}], ")"}], "||", 
+          RowBox[{"(", 
+           RowBox[{"t", "\[Equal]", "\"\<-\>\""}], ")"}], "||", 
+          RowBox[{"(", 
+           RowBox[{"t", "\[Equal]", "\"\<+\>\""}], ")"}], "||", 
+          RowBox[{"(", 
+           RowBox[{"t", "\[Equal]", "\"\<.\>\""}], ")"}], "||", 
+          RowBox[{"(", 
+           RowBox[{"t", "\[Equal]", "\"\<,\>\""}], ")"}], "||", 
+          RowBox[{"(", 
+           RowBox[{"t", "\[Equal]", "\"\<0\>\""}], ")"}], "||", 
+          RowBox[{"(", 
+           RowBox[{"t", "\[Equal]", "\"\<1\>\""}], ")"}], "||", 
+          RowBox[{"(", 
+           RowBox[{"t", "\[Equal]", "\"\<2\>\""}], ")"}], "||", 
+          RowBox[{"(", 
+           RowBox[{"t", "\[Equal]", "\"\<3\>\""}], ")"}], "||", 
+          RowBox[{"(", 
+           RowBox[{"t", "\[Equal]", "\"\<a\>\""}], ")"}], "||", 
+          RowBox[{"(", 
+           RowBox[{"t", "\[Equal]", "\"\<s\>\""}], ")"}], "||", 
+          RowBox[{"(", 
+           RowBox[{"t", "\[Equal]", "\"\<d\>\""}], ")"}], "||", 
+          RowBox[{"(", 
+           RowBox[{"t", "\[Equal]", "\"\<f\>\""}], ")"}], "||", 
+          RowBox[{"(", 
+           RowBox[{"t", "\[Equal]", "\"\<A\>\""}], ")"}], "||", 
+          RowBox[{"(", 
+           RowBox[{"t", "\[Equal]", "\"\<S\>\""}], ")"}], "||", 
+          RowBox[{"(", 
+           RowBox[{"t", "\[Equal]", "\"\<D\>\""}], ")"}], "||", 
+          RowBox[{"(", 
+           RowBox[{"t", "\[Equal]", "\"\<F\>\""}], ")"}], "||", 
+          RowBox[{"(", 
+           RowBox[{"t", "\[Equal]", "\"\<:\>\""}], ")"}], "||", 
+          RowBox[{"(", 
+           RowBox[{"t", "\[Equal]", "\"\<^\>\""}], ")"}], "||", 
+          RowBox[{"(", 
+           RowBox[{"t", "\[Equal]", "\"\<!\>\""}], ")"}]}], ",", 
+         RowBox[{
+          RowBox[{"j", "++"}], ";", "\[IndentingNewLine]", 
+          RowBox[{"t", "=", 
+           RowBox[{"c", "[", 
+            RowBox[{"[", 
+             RowBox[{
+              RowBox[{"a", "[", 
+               RowBox[{"[", 
+                RowBox[{"1", ",", "j"}], "]"}], "]"}], ",", 
+              RowBox[{"boundO", "[", "k", "]"}]}], "]"}], "]"}]}]}]}], "]"}], 
+       ";", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"F", "[", 
+         RowBox[{"[", "k", "]"}], "]"}], "=", "t"}], ";", 
+       RowBox[{"j", "++"}]}], ",", 
+      RowBox[{
+       RowBox[{"F", "[", 
+        RowBox[{"[", "k", "]"}], "]"}], "=", 
+       RowBox[{"b", "[", 
+        RowBox[{"[", "k", "]"}], "]"}]}]}], "]"}]}], "]"}], ";"}], "\n", 
+ RowBox[{"StringJoin", "[", "F", "]"}]}], "Input",
+ CellChangeTimes->{{3.700656186469076*^9, 3.700656186469689*^9}}]
+},
+WindowSize->{808, 621},
+WindowMargins->{{275, Automatic}, {Automatic, 44}},
+FrontEndVersion->"10.4 for Linux x86 (64-bit) (April 11, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 12138, 239, 2915, "Input"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
