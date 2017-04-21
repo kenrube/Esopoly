@@ -7,4 +7,4 @@ If you want to know how it was impemented please read wiki: [en](https://github.
 
 
 # License
-All sources licensed under MIT except [asdf](https://github.com/kenrube/Esopoly/blob/master/sources/asdf/interpreter.exe), [123](https://github.com/kenrube/Esopoly/blob/master/sources/123/interpreter.exe) and [EXCON](https://github.com/kenrube/Esopoly/blob/master/sources/EXCON/interpreter.rb) interpreters.
+All sources licensed under [MIT license](https://github.com/kenrube/Esopoly/blob/master/LICENSE.md) except [asdf](https://github.com/kenrube/Esopoly/blob/master/sources/asdf/interpreter.exe), [123](https://github.com/kenrube/Esopoly/blob/master/sources/123/interpreter.exe) and [EXCON](https://github.com/kenrube/Esopoly/blob/master/sources/EXCON/interpreter.rb) interpreters.
