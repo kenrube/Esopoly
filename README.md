@@ -4,11 +4,8 @@ Polyglot written in 7 esoteric programming languages: [Malbolge](http://esolangs
 If you want to know how it was impemented please read wiki: [en](https://github.com/kenrube/Esopoly/wiki/Process-of-creation), [ru](https://github.com/kenrube/Esopoly/wiki/Процесс-создания). [This link](https://github.com/kenrube/Esopoly/blob/master/source?ts=1) shows appropriate source view. How it should look in fact:
 
 ![view](https://github.com/kenrube/Esopoly/blob/master/view.jpg "Esoteric polyglot")
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fkenrube%2FEsopoly.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fkenrube%2FEsopoly?ref=badge_shield)
-
 
 # License
 All sources licensed under [MIT license](https://github.com/kenrube/Esopoly/blob/master/LICENSE.md) except [asdf](https://github.com/kenrube/Esopoly/blob/master/sources/asdf/interpreter.exe), [123](https://github.com/kenrube/Esopoly/blob/master/sources/123/interpreter.exe) and [EXCON](https://github.com/kenrube/Esopoly/blob/master/sources/EXCON/interpreter.rb) interpreters.
-
 
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fkenrube%2FEsopoly.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fkenrube%2FEsopoly?ref=badge_large)
